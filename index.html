@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .colors {
+            border: 1px solid blue;
+            margin: 1%;
+            padding: 2%;
+        }
+        .newcolors {
+            border: 1px solid red;
+            background-color: orange;
+            margin: 1%;
+            padding: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <h1>Вопросы</h1>
+        <h2>1. Вопрос - Форма вопроса из week13</h2>
+    </div>
+<button onclick="showMessage ()">Нажми меня</button> 
+
+    <div>
+        <h2>8. Вопрос - Ссылка</h2>
+    <button onclick="link2 ()">Ссылка2</button>    
+    </div>
+    <div>
+        <h2>7. Вопрос - Поиск</h2>   
+    <form name="search">
+		<label>Поиск:
+			<input type="text" name="search"> </label>
+		<input type="submit" value="Search!"> </form>
+	<hr>
+	<form name="search-person">Поиск по посетителям:
+		<table id="age-table">
+			<tr>
+				<td>Возраст:</td>
+				<td id="age-list">
+					<label>
+						<input type="radio" name="age" value="young">до 18</label>
+					<label>
+						<input type="radio" name="age" value="mature">18-50</label>
+					<label>
+						<input type="radio" name="age" value="senior">старше 50</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Дополнительно:</td>
+				<td>
+					<input type="text" name="info">
+					<input type="text" name="info">
+					<input type="text" name="info"> </td>
+			</tr>
+		</table>
+		<input type="button" value="Search!"> </form>
+    </div>
+    <div>
+        <h1>Практическое задание</h1>
+       <div class="colors" onclick="select(this)">
+       <h3> Вопрос 2 - Напишите скрипт, который меняет фон div-ов по клику на них</h3>    
+       </div> 
+    </div>
+    <div id="PictureGallery">
+        <img id="picture1" src="assest/Rectangle10.png" alt="PK" onclick="changeMe ()">
+    </div>
+<script src="/index.js"></script>   
+</body>
+</html>
